@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayman Skincare</title>
+  <link rel="shortcut icon" type="image/jpg" href="logo.jpeg">
+  <style>
+   body {
+    font-family:'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #floralwhite;
+    color: #333;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+body {
+    padding-bottom: 60px; /* Adjust based on footer height */
+}
+    header {
+    background-color: #f4f4f4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+.welcome-section {
+  padding: 60px 20px;
+  background-color: #FFF8DC;
+}
+
+.welcome-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.welcome-text {
+  flex: 1 1 500px;
+}
+
+.welcome-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.welcome-text p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+    .hero {
+      background-color: #floralwhite;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .highlight {
+      font-size: 1.5em;
+      color: #222;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #778899;
+      font-size: 14px;
+    }
+
+    /* --- Blumarine Promo Section --- */
+    .promo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background: linear-gradient(to top, #FFF0F5, #fff);
+    }
+
+    .promo-content {
+      flex: 1 1 500px;
+      padding-right: 30px;
+    }
+
+    .promo-content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .promo-content p {
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background-color: #e6b84b;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #FFEBCD;
+    }
+
+    .btn-secondary {
+      border: 2px solid #222;
+      color: #222;
+      background: white;
+    }
+
+    .btn-secondary:hover {
+      background-color: #f2f2f2;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .features span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 0;
+    }
+
+    .promo-image {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .promo-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .benefits {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 10%;
+      background-color: #FFF5EE;
+    }
+
+    .benefit {
+      text-align: center;
+      flex: 1 1 180px;
+      margin: 20px;
+    }
+
+    .benefit img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .benefit p {
+      font-weight: 600;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .promo {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+      }
+
+      .promo-content {
+        padding-right: 0;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #778899;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .info-section, .form-section {
+        text-align: center;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="color:black;">Kayman Skincare</h1>
+    <p style="color:#4D4D4D">Glow Confidently with Nature-Backed Skincare</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<!-- Welcome Text -->
+  <main>
+  <section class="welcome-section">
+    <div class="welcome-container">
+      <div class="welcome-text">
+        <h2>Welcome to Kayman</h2>
+        <p>At <strong>Kayman Skincare</strong>, we believe in empowering your glow through nature and science. Our bestselling <strong>COALFACE</strong> series, crafted with activated charcoal, is designed to deeply cleanse, purify, and rejuvenate your skin—giving you that fresh, radiant glow every day.</p>
+
+        <ul class="features-list">
+          <li>🌿 Made with Natural Ingredients</li>
+          <li>💧 Suitable for All Skin Types</li>
+          <li>🖤 Loved by Thousands of Glowing Customers</li>
+        </ul>
+
+        <p class="join">✨ Join the movement. <strong>#GlowConfidently</strong></p>
+      <div class="cta-buttons">
+        <a href="products.html" class="btn-primary">EXPLORE OUR PRODUCTS →</a>
+
+      </div>
+
+      
+    </div>
+  </section>
+</main>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="koi.jpg" alt="Kayman Coalface Product Range">
+    <p class="highlight">Experience the Power of Activated Charcoal with COALFACE</p>
+  </div>
+
+  <!-- Blumarine Promo Section -->
+  <section class="promo">
+    <div class="promo-content">
+      <h2>Achieve Poreless Looking Skin in 14 Days*</h2>
+      <p>Dive into Deep Hydration: Unleash the Power of the Sea with Blumarine Hydrating Ampoule!</p>
+      <div class="cta-buttons">
+        <a href="products.html" class="btn-primary">SHOP NOW →</a>
+      </div>
+     <div class="promo-image">
+  <div class="image-wrapper">
+    <img src="ampoluee.webp" alt="Blumarine Hydrating Ampoule">
+    <div class="image-features">
+      <span>✔ Non-Sticky</span>
+      <span>✔ Suitable for All Skin Types</span>
+      <span>✔ Dermatologist Approved</span>
+      <span>✔ Award-Winning 2024</span>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Benefits -->
+  <section class="benefits">
+    <div class="benefit">
+      <img src="smile.avif" alt="For all skin types">
+      <p>For all skin types</p>
+    </div>
+    <div class="benefit">
+      <img src="rabbit.avif" alt="Not tested on animals">
+      <p>Not tested on animals</p>
+    </div>
+    <div class="benefit">
+      <img src="pallete.avif" alt="Colorant free">
+      <p>Colorant free</p>
+    </div>
+  </section>
+<section class="problems-section">
+  <div class="problems-container">
+    <div class="problems-text">
+      <h2>Problems we solve at Kayman Beauty</h2>
+      <div class="problems-grid">
+        <div>
+          <h4>✔ ACNE</h4>
+          <p>Achieve a smoother and clearer complexion without compromising the integrity of the skin.</p>
+        </div>
+        <div>
+          <h4>✔ DRY SKIN</h4>
+          <p>Soft and supple skin is at your fingertips with the right balance of hydration and moisture.</p>
+        </div>
+        <div>
+          <h4>✔ DULL SKIN</h4>
+          <p>Reveal brighter skin with a youthful and luminous glow.</p>
+        </div>
+        <div>
+          <h4>✔ OILY SKIN</h4>
+          <p>Bring balance back to your skin for a lively complexion without greasy discomfort.</p>
+        </div>
+        <div>
+          <h4>✔ SENSITIVE SKIN</h4>
+          <p>Repair and maintain the skin for optimal performance with the careful care your skin deserves.</p>
+        </div>
+      </div>
+     <div class="cta-buttons">
+ <div class="cta-buttons">
+        <a href="products.html" class="btn-primary">SHOP NOW →</a>
+      </div>    
+</section>
+
+
+
+ 
+  <footer style="color: white;">
+  &copy; 2025 KAYMAN Skincare. All rights reserved.
+</footer>
+
+</body>
+</html>

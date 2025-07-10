@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | Kayman Skincare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/jpg" href="logo.jpeg">
+  <script>
+        function makePayment(productName) {
+            localStorage.setItem("selectedProduct", productName);
+            window.location.href = "payment.html";
+        }
+    </script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<style>
+  
+</style>
+<body>
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="products.html" class="active">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Filters -->
+    <section class="filters">
+      <label>Price:
+        <select>
+          <option>All</option>
+          <option>Below RM100</option>
+          <option>RM100 - RM150</option>
+          <option>Above RM150</option>
+        </select>
+      </label>
+      <label>Sort by:
+        <select>
+          <option>Best Selling</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </label>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <div class="product-card">
+        <img src="cleanser.webp" alt="Product Name" />
+        <h3>CoalBerry Cleanser-Low ph Gel Clanser</h3>
+        <p>RM45.00</p>
+        </button>    
+        <button onclick="makePayment('CoalBerry Cleanser')">Make a Payment</button>
+    <script>
+  function makePayment(productName) {
+    localStorage.setItem("selectedProduct", productName);
+    window.location.href = "payment.html";
+  }
+</script>
+
+          </div>
+
+      <div class="product-card">
+        <img src="serum.webp" alt="Product Name" />
+        <h3>Skintella Repairing Serum</h3>
+        <p>RM63.40</p>
+         <button onclick="makePayment('Skintella Repairing Serum')">Make a Payment</button>
+    </script>
+
+      </div>
+
+    <div class="product-card">
+        <img src="essence.webp" alt="Product Name" />
+        <h3>Rosa Glow Treatment Essence</h3>
+        <p>RM81.80</p>
+        <button onclick="makePayment('Rosa Glow Treatment Essence')">Make a Payment</button>
+    </script>
+
+      </div>
+
+      <div class="product-card">
+        <img src="moisturiser.webp" alt="Product Name" />
+        <h3>Skintella Moisturizing Gel</h3>
+        <p>RM72.60</p>
+        <button onclick="makePayment('Skintella Moisturizing Gel')">Make a Payment</button>
+    </script>
+      </div>
+      <div class="product-card">
+        <img src="soap.webp" alt="Product Name" />
+        <h3>CoalFace Soap</h3>
+        <p>RM35.00</p>
+        <button onclick="makePayment('CoalFace Soap')">Make a Payment</button>
+    </script>
+      </div>
+
+      <div class="product-card">
+        <img src="toner.webp" alt="Product Name" />
+        <h3>HyaluMelon Mist Toner</h3>
+        <p>RM59.00</p>
+        <button onclick="makePayment('HyaluMelon Mist Toner')">Make a Payment</button>
+    </script>
+      </div>
+
+    <div class="product-card">
+        <img src="exfo.webp" alt="Product Name" />
+        <h3>HoneyGlo Facial Exfoliant</h3>
+        <p>RM55.00</p>
+        <button onclick="makePayment('HoneyGlo Facial Exfoliant')">Make a Payment</button>
+    </script>
+      </div>
+
+      <div class="product-card">
+        <img src="balm.webp" alt="Product Name" />
+        <h3>Skintella Cleansing Sherbet (40g)</h3>
+        <p>RM59.00</p>
+        <button onclick="makePayment('Skintella Cleansing Sherbet')">Make a Payment</button>
+    </script>
+      </div>
+      <div class="product-card">
+        <img src="ampolue.webp" alt="Product Name" />
+        <h3>BluMarine Hydrating Ampoule</h3>
+        <p>RM69.00</p>
+        <button onclick="makePayment('BluMarine Hydrating Ampolue')">Make a Payment</button>
+    </script>
+      </div>
+
+      <!-- Add more products here -->
+    </section>
+  </main>
+
+</body>
+</html>

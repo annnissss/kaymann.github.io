@@ -6,10 +6,7 @@
   <title>Products | Kayman Skincare</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" type="image/jpg" href="logo.jpeg">
-  <script>
-        function makePayment(productName) {
-            localStorage.setItem("selectedProduct", productName);
-            window.location.href = "payment.html";
+  
         }
     </script>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap" rel="stylesheet">
@@ -132,6 +129,12 @@
       <!-- Add more products here -->
     </section>
   </main>
+<script>
+  function makePayment(productName) {
+    localStorage.setItem("selectedProduct", productName);
+    window.location.href = "payment.html";
+  }
+</script>
 
 </body>
 </html>

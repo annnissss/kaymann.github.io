@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Thank You - Kayman Skincare</title>
+  <title>Thank You - KAYMAN Skincare</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="logo.jpeg" type="image/jpeg" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&display=swap" rel="stylesheet" />
+
   <style>
     body {
       background-color: #d0f0f4;
@@ -43,24 +45,32 @@
 
     a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #2980b9;
-      color: white;
+      margin-top: 25px;
       text-decoration: none;
+      background-color: #1748cf;
+      color: white;
+      padding: 12px 24px;
       border-radius: 6px;
+      transition: background-color 0.3s;
+      font-weight: bold;
     }
 
     a:hover {
-      background-color: #3498db;
+      background-color: #123aa3;
+    }
+
+    @media (max-width: 500px) {
+      .thank-you-box {
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="thank-you-box">
-    <h1>Thank You for Your Payment!</h1>
-    <p>We appreciate your trust in Kayman Skincare. Your order has been received and is being processed.</p>
-    <a href="index.html">Back to Home</a>
+    <h1>Thank You!</h1>
+    <p>Your payment was successful.<br>We're processing your order and will send a confirmation email soon.</p>
+    <a href="index.html">Return to Home</a>
   </div>
 </body>
 </html>
